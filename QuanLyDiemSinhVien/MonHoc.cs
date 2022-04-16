@@ -10,18 +10,19 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 
+
 namespace QuanLyDiemSinhVien
 {
-    public partial class GiaoVien : Form
+    public partial class MonHoc : Form
     {
         private Database db = new Database();
-        public static string magv;
-        public GiaoVien()
+        public static string mamh;
+        public MonHoc()
         {
             InitializeComponent();
         }
 
-        private void GiaoVien_Load(object sender, EventArgs e)
+        private void MonHoc_Load(object sender, EventArgs e)
         {
             //Load dữ liệu từ database sql lên datagridview
             using (SqlConnection conn = new SqlConnection(db.connectionString))
@@ -29,7 +30,7 @@ namespace QuanLyDiemSinhVien
                 //Mở kết nối
                 conn.Open();
                 //Sử dụng câu lệnh như trong sql : select,delete,update...
-                SqlDataAdapter adapter = new SqlDataAdapter("select*from GiaoVien", conn);
+                SqlDataAdapter adapter = new SqlDataAdapter("select*from MonHoc", conn);
                 //Chuyển dữ liệu qua dạng datatable để đưa lên datagridview
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -46,24 +47,11 @@ namespace QuanLyDiemSinhVien
             label1.Text = numrow.ToString();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            ThemGiaoVien themGiaoVien = new ThemGiaoVien();
-            themGiaoVien.ShowDialog();
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-            magv = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
-            SuaGiaoVien suaGiaoVien = new SuaGiaoVien();
-            suaGiaoVien.ShowDialog();
-        }
-
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            magv = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            mamh = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
 
-            string sql = "delete from GiaoVien where maGV='" + magv + "'";
+            string sql = "delete from MonHoc where maMH='" + mamh + "'";
             if (MessageBox.Show("Bạn có muốn xóa!", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 using (SqlConnection con = new SqlConnection(db.connectionString))
@@ -79,13 +67,27 @@ namespace QuanLyDiemSinhVien
                 using (SqlConnection conn = new SqlConnection(db.connectionString))
                 {
                     conn.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter("select*from GiaoVien", conn);
+                    SqlDataAdapter adapter = new SqlDataAdapter("select*from MonHoc", conn);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
                     guna2DataGridView1.DataSource = dt;
                     conn.Close();
                 }
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ThemMonHoc themMonHoc = new ThemMonHoc();
+            themMonHoc.ShowDialog();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            mamh = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+
+            SuaMonHoc suaMonHoc = new SuaMonHoc();
+            suaMonHoc.ShowDialog();
         }
     }
 }

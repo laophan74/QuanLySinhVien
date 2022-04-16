@@ -104,6 +104,7 @@
             this.guna2Button2.TabIndex = 11;
             this.guna2Button2.Text = "Môn Học";
             this.guna2Button2.TextOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button7
             // 
@@ -147,6 +148,7 @@
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "Giáo Viên";
             this.guna2Button3.TextOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button1
             // 

@@ -26,5 +26,25 @@ namespace QuanLyDiemSinhVien
             this.panel_Container.Controls.Add(a);
             a.Show();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.panel_Container.Controls.Clear();
+            GiaoVien a = new GiaoVien();
+            a.TopLevel = false;
+            a.Dock = DockStyle.Fill;
+            this.panel_Container.Controls.Add(a);
+            a.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.panel_Container.Controls.Clear();
+            MonHoc a = new MonHoc();
+            a.TopLevel = false;
+            a.Dock = DockStyle.Fill;
+            this.panel_Container.Controls.Add(a);
+            a.Show();
+        }
     }
 }
