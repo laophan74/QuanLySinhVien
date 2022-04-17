@@ -81,10 +81,14 @@ namespace QuanLyDiemSinhVien
                     }
 
                 }
+                else
+                {
+                    MessageBox.Show("Nhập sai thông tin!","Thông Báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Nhập sai thông tin!");
             }
 
         }

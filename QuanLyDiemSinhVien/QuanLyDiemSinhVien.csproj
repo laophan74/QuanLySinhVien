@@ -68,6 +68,12 @@
     <Compile Include="GiaoVien.Designer.cs">
       <DependentUpon>GiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="LopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LopHoc.Designer.cs">
+      <DependentUpon>LopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_GiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     <Compile Include="ThemGiaoVien.Designer.cs">
       <DependentUpon>ThemGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemLopHoc.Designer.cs">
+      <DependentUpon>ThemLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoVien.resx">
       <DependentUpon>GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LopHoc.resx">
+      <DependentUpon>LopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_GiaoVien.resx">
       <DependentUpon>Main_GiaoVien.cs</DependentUpon>
@@ -172,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemGiaoVien.resx">
       <DependentUpon>ThemGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemLopHoc.resx">
+      <DependentUpon>ThemLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemMonHoc.resx">
       <DependentUpon>ThemMonHoc.cs</DependentUpon>

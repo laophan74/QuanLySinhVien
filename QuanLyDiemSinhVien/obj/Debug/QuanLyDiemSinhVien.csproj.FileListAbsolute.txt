@@ -42,3 +42,5 @@ C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinh
 C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinhVien.MonHoc.resources
 C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinhVien.ThemMonHoc.resources
 C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinhVien.SuaMonHoc.resources
+C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinhVien.LopHoc.resources
+C:\Users\ASUS\Desktop\QuanLySinhVien\QuanLyDiemSinhVien\obj\Debug\QuanLyDiemSinhVien.ThemLopHoc.resources

@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_GiaoVien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_Container = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panel_Container = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -59,6 +59,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(308, 614);
             this.panel1.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.guna2PictureBox2);
+            this.panel2.Controls.Add(this.guna2PictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(308, 65);
+            this.panel2.TabIndex = 9;
+            // 
+            // panel_Container
+            // 
+            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Container.Location = new System.Drawing.Point(308, 0);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(1111, 614);
+            this.panel_Container.TabIndex = 7;
             // 
             // guna2Button4
             // 
@@ -171,16 +189,7 @@
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Lớp Học";
             this.guna2Button1.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.guna2PictureBox2);
-            this.panel2.Controls.Add(this.guna2PictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(308, 65);
-            this.panel2.TabIndex = 9;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2PictureBox2
             // 
@@ -206,14 +215,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // panel_Container
-            // 
-            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Container.Location = new System.Drawing.Point(308, 0);
-            this.panel_Container.Name = "panel_Container";
-            this.panel_Container.Size = new System.Drawing.Size(1111, 614);
-            this.panel_Container.TabIndex = 7;
             // 
             // Main_GiaoVien
             // 
