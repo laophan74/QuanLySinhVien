@@ -15,6 +15,7 @@ namespace QuanLyDiemSinhVien
     public partial class DangKy : Form
     {
         private Database db = new Database();
+        public static string taikhoan;
 
         public DangKy()
         {
@@ -45,20 +46,32 @@ namespace QuanLyDiemSinhVien
                 if(guna2ComboBox1.SelectedItem.ToString() == "Sinh Viên")
                 {
                     loaiTk = 1;
+
                 }
                 else
                 {
                     loaiTk = 2;
+
                 }
                 string sql =
-                    "insert into TaiKhoan(taikhoan,matkhau,loaiTK) values ('"+tk+ "','" + mk + "',"+loaiTk+")";
+                    "insert into TaiKhoan(taikhoan,matkhau,loaiTK) values ('"+tk+ "','" + mk + "'," + loaiTk+")";
                 conn.Open();
                 SqlCommand sqlCommand = new SqlCommand(sql, conn);
                 sqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Đăng ký thành công!");
+                if (guna2ComboBox1.SelectedItem.ToString() == "Sinh Viên")
+                {
+                    taikhoan = tk;
+                    TaoSinhVien t = new TaoSinhVien();
+                    t.ShowDialog();
+                }
+                else
+                {
+                    taikhoan = tk;
+                    TaoGiaoVien t = new TaoGiaoVien();
+                    t.ShowDialog();
+                }
                 this.Hide();
-                DangNhap dangNhap = new DangNhap();
-                dangNhap.ShowDialog();
                 conn.Close();
             }
         }

@@ -55,6 +55,12 @@
     <Compile Include="DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangKyLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyLop.Designer.cs">
+      <DependentUpon>DangKyLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,18 @@
     <Compile Include="SuaSinhVien.Designer.cs">
       <DependentUpon>SuaSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaoGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoGiaoVien.Designer.cs">
+      <DependentUpon>TaoGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaoSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoSinhVien.Designer.cs">
+      <DependentUpon>TaoSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyLop.resx">
+      <DependentUpon>DangKyLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
@@ -184,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuaSinhVien.resx">
       <DependentUpon>SuaSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoGiaoVien.resx">
+      <DependentUpon>TaoGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoSinhVien.resx">
+      <DependentUpon>TaoSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemGiaoVien.resx">
       <DependentUpon>ThemGiaoVien.cs</DependentUpon>

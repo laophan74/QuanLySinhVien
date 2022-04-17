@@ -21,8 +21,10 @@ go
 create table LopHoc(
 	maLH int primary key identity,
 	maMH int foreign key references MonHoc(maMH),
+	tenMH nvarchar(30),
 	maGV int foreign key references GiaoVien(maGV),
-	trangthai nvarchar(30),
+	tenGV nvarchar(30),
+	trangthai nvarchar(30)
 )
 go
 create table SinhVien(
@@ -36,16 +38,22 @@ create table SinhVien(
 )
 go
 create table DangKyLop(
-	maLH int foreign key references LopHoc(maLH),
-	maSV char(30) foreign key references SinhVien(maSV),
+	maLH int,
+	maMH int,
+	tenMH nvarchar(30),
+	maGV int,
+	tenGV nvarchar(30),
+	maSV char(30),
+	tenSV nvarchar(30),
 	diemGK int,
-	diemCK int
-	primary key(maLH, maSV)
+	diemCK int,
+	trangthai nvarchar(30)
 )
 go 
 create table TaiKhoan(
-	maTK int primary key identity,
-	taikhoan nvarchar(30),
+	taikhoan nvarchar(30) primary key,
 	matkhau nvarchar(30),
+	maSV char(30),
+	maGV int,
 	loaiTK int
 )

@@ -16,5 +16,15 @@ namespace QuanLyDiemSinhVien
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.panel_Container.Controls.Clear();
+            DangKyLop a = new DangKyLop();
+            a.TopLevel = false;
+            a.Dock = DockStyle.Fill;
+            this.panel_Container.Controls.Add(a);
+            a.Show();
+        }
     }
 }

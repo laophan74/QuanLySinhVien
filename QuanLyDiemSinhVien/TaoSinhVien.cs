@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace QuanLyDiemSinhVien
 {
-    public partial class ThemSinhVien : Form
+    public partial class TaoSinhVien : Form
     {
         private Database db = new Database();
-
-        public ThemSinhVien()
+        public static string maSinhVien;
+        public TaoSinhVien()
         {
             InitializeComponent();
         }
@@ -36,6 +37,7 @@ namespace QuanLyDiemSinhVien
                 MessageBox.Show("Vui lòng nhập đúng thông tin!", "Thông Báo", MessageBoxButtons.OK);
                 return;
             }
+            else { 
             using (SqlConnection conn = new SqlConnection(db.connectionString))
             {
 
@@ -45,12 +47,21 @@ namespace QuanLyDiemSinhVien
                 SqlCommand sqlCommand = new SqlCommand(sql, conn);
                 sqlCommand.ExecuteNonQuery();
                 MessageBox.Show("Thành công!");
-                conn.Close();
-            }
 
+                maSinhVien = masv;
+                    string sql1 = "update TaiKhoan set maSV = '"+masv+"' where taikhoan ='"+DangKy.taikhoan+"'";
+                    SqlCommand sqlCommandd = new SqlCommand(sql1, conn);
+                    sqlCommandd.ExecuteNonQuery();
+
+                    conn.Close();
+            }
+                this.Hide();
+                DangNhap dang = new DangNhap();
+                dang.ShowDialog();
+        }
         }
 
-        private void ThemSinhVien_Load(object sender, EventArgs e)
+        private void TaoSinhVien_Load(object sender, EventArgs e)
         {
             guna2ComboBox1.Text = "Nam";
         }

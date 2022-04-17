@@ -54,7 +54,6 @@ namespace QuanLyDiemSinhVien
                 {
                     maGV = dt1.Rows[0]["maGV"].ToString();
                 }
-                MessageBox.Show(maGV);
 
                 //Them vao database
                 string sqll =

@@ -14,6 +14,8 @@ namespace QuanLyDiemSinhVien
 {
     public partial class DangNhap : Form
     {
+        public static string maSV;
+        public static string maGV;
         private Database db = new Database();
         public DangNhap()
         {
@@ -57,6 +59,12 @@ namespace QuanLyDiemSinhVien
                         case "1":
                             {
                                 MessageBox.Show("Đăng nhập thành công", "Thông Báo", MessageBoxButtons.OK);
+                                SqlCommand cmdd = new SqlCommand(
+                                    "select MaSV from TaiKhoan where taikhoan = "+tk+"", conn);
+                                SqlDataAdapter adapt = new SqlDataAdapter(cmdd);
+                                DataTable dtt = new DataTable();
+                                adapt.Fill(dtt);
+                                maSV = dtt.Rows[0]["maSV"].ToString();
 
                                 this.Hide();
                                 Main_SinhVien m = new Main_SinhVien();
@@ -66,6 +74,12 @@ namespace QuanLyDiemSinhVien
                         case "2":
                             {
                                 MessageBox.Show("Đăng nhập thành công", "Thông Báo", MessageBoxButtons.OK);
+                                SqlCommand cmdd = new SqlCommand(
+                                    "select MaGV from TaiKhoan where taikhoan = " + tk + "", conn);
+                                SqlDataAdapter adapt = new SqlDataAdapter(cmdd);
+                                DataTable dtt = new DataTable();
+                                adapt.Fill(dtt);
+                                maGV = dtt.Rows[0]["maGV"].ToString();
 
                                 this.Hide();
                                 Main_GiaoVien m = new Main_GiaoVien();

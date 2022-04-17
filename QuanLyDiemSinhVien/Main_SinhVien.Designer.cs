@@ -32,10 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel_Container = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -51,8 +49,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2Button2);
             this.panel1.Controls.Add(this.guna2Button7);
             this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Controls.Add(this.guna2Button1);
@@ -75,7 +71,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel_Container);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(308, 0);
@@ -83,13 +79,13 @@
             this.panel3.Size = new System.Drawing.Size(1189, 632);
             this.panel3.TabIndex = 6;
             // 
-            // panel5
+            // panel_Container
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 65);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1189, 567);
-            this.panel5.TabIndex = 1;
+            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Container.Location = new System.Drawing.Point(0, 65);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(1189, 567);
+            this.panel_Container.TabIndex = 1;
             // 
             // panel4
             // 
@@ -98,50 +94,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1189, 65);
             this.panel4.TabIndex = 0;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
-            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 275);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(308, 70);
-            this.guna2Button4.TabIndex = 12;
-            this.guna2Button4.Text = "Sinh Viên";
-            this.guna2Button4.TextOffset = new System.Drawing.Point(8, 0);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageOffset = new System.Drawing.Point(8, 0);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 205);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(308, 70);
-            this.guna2Button2.TabIndex = 11;
-            this.guna2Button2.Text = "Môn Học";
-            this.guna2Button2.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // guna2Button7
             // 
@@ -153,7 +105,7 @@
             this.guna2Button7.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.guna2Button7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button7.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.guna2Button7.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
             this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button7.ImageOffset = new System.Drawing.Point(8, 0);
@@ -174,7 +126,7 @@
             this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.guna2Button3.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.ImageOffset = new System.Drawing.Point(8, 0);
@@ -183,7 +135,7 @@
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(308, 70);
             this.guna2Button3.TabIndex = 3;
-            this.guna2Button3.Text = "Giáo Viên";
+            this.guna2Button3.Text = "Xem điểm";
             this.guna2Button3.TextOffset = new System.Drawing.Point(8, 0);
             // 
             // guna2Button1
@@ -196,7 +148,7 @@
             this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Navy;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(83)))), ((int)(((byte)(251)))));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.guna2Button1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.ImageOffset = new System.Drawing.Point(8, 0);
@@ -205,8 +157,9 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(308, 70);
             this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Lớp Học";
+            this.guna2Button1.Text = "Đăng ký lớp";
             this.guna2Button1.TextOffset = new System.Drawing.Point(8, 0);
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2PictureBox2
             // 
@@ -260,10 +213,8 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel_Container;
         private System.Windows.Forms.Panel panel4;
     }
 }
