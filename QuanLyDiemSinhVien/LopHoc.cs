@@ -79,5 +79,12 @@ namespace QuanLyDiemSinhVien
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            malh = guna2DataGridView1.CurrentRow.Cells[0].Value.ToString();
+            ChamDiem chamDiem = new ChamDiem();
+            chamDiem.ShowDialog();
+        }
     }
 }

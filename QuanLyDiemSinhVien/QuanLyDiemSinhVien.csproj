@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChamDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamDiem.Designer.cs">
+      <DependentUpon>ChamDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamDiem1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamDiem1.Designer.cs">
+      <DependentUpon>ChamDiem1.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +172,12 @@
     <Compile Include="ThemSinhVien.Designer.cs">
       <DependentUpon>ThemSinhVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChamDiem.resx">
+      <DependentUpon>ChamDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChamDiem1.resx">
+      <DependentUpon>ChamDiem1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>

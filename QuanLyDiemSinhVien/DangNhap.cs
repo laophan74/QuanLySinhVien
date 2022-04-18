@@ -60,7 +60,7 @@ namespace QuanLyDiemSinhVien
                             {
                                 MessageBox.Show("Đăng nhập thành công", "Thông Báo", MessageBoxButtons.OK);
                                 SqlCommand cmdd = new SqlCommand(
-                                    "select MaSV from TaiKhoan where taikhoan = "+tk+"", conn);
+                                    "select MaSV from TaiKhoan where taikhoan = '"+tk+"'", conn);
                                 SqlDataAdapter adapt = new SqlDataAdapter(cmdd);
                                 DataTable dtt = new DataTable();
                                 adapt.Fill(dtt);
@@ -75,7 +75,7 @@ namespace QuanLyDiemSinhVien
                             {
                                 MessageBox.Show("Đăng nhập thành công", "Thông Báo", MessageBoxButtons.OK);
                                 SqlCommand cmdd = new SqlCommand(
-                                    "select MaGV from TaiKhoan where taikhoan = " + tk + "", conn);
+                                    "select MaGV from TaiKhoan where taikhoan = '" + tk + "'", conn);
                                 SqlDataAdapter adapt = new SqlDataAdapter(cmdd);
                                 DataTable dtt = new DataTable();
                                 adapt.Fill(dtt);
